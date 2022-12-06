@@ -57,6 +57,7 @@ public class MainActivity extends Activity
                     String txt6=ed6.getText().toString().trim();
 
                     String[] T = {txt1, txt2, txt3, txt4, txt5, txt6};
+                    
                     List<Integer> X = new ArrayList<Integer>();
                     try {
 
@@ -65,13 +66,12 @@ public class MainActivity extends Activity
                                 X.add(i);
                             }
                         }
+                        
+                        final int min= 0;
+                        final int max = X.size();
+                        final int random = new Random().nextInt((max - min) ) + min;
 
-                        String s="";
-                        for (int i=0;i < X.size();i++) {
-                            s += "X[" + (i + 1) + "]=" + X.get(i) + ";\n";
-                        }
-                        s += "\nSize = " + X.size();
-                        txtview.setText(s);
+                        txtview.setText(T[X.get(random)]);
                     }
                     catch (Exception e) {
                         txtview.setText("error:" + e + "\n" + txt1);

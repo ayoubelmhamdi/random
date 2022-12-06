@@ -23,7 +23,8 @@
 		android:orientation="horizontal"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_weight="2">
+		android:layout_weight="2"
+		android:padding="10dp">
 
 		<LinearLayout
 			android:orientation="vertical"
@@ -36,19 +37,21 @@
 				android:ems="10"
 				android:layout_height="wrap_content"
 				android:id="@+id/ed1"
-				android:text="abc"/>
+				android:text="Khaliss"/>
 
 			<EditText
 				android:layout_width="wrap_content"
 				android:ems="10"
 				android:layout_height="wrap_content"
-				android:id="@+id/ed2"/>
+				android:id="@+id/ed2"
+				android:text="Sebihi"/>
 
 			<EditText
 				android:layout_width="wrap_content"
 				android:ems="10"
 				android:layout_height="wrap_content"
-				android:id="@+id/ed3"/>
+				android:id="@+id/ed3"
+				android:text="Africha"/>
 
 		</LinearLayout>
 
@@ -62,20 +65,22 @@
 				android:layout_width="wrap_content"
 				android:ems="10"
 				android:layout_height="wrap_content"
-				android:id="@+id/ed4"/>
+				android:id="@+id/ed4"
+				android:text="Talbi"/>
 
 			<EditText
 				android:layout_width="wrap_content"
 				android:ems="10"
 				android:layout_height="wrap_content"
 				android:id="@+id/ed5"
-				android:text="efg"/>
+				android:text="Mourad"/>
 
 			<EditText
 				android:layout_width="wrap_content"
 				android:ems="10"
 				android:layout_height="wrap_content"
-				android:id="@+id/ed6"/>
+				android:id="@+id/ed6"
+				android:text="Atiya"/>
 
 		</LinearLayout>
 
@@ -92,13 +97,18 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="Text"
-			android:id="@+id/txtview"/>
+			android:id="@+id/txtview"
+			android:textSize="60sp"
+			android:textStyle="bold"
+			android:textColor="#FF0000"/>
 
 		<Button
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Button"
-			android:id="@+id/btn"/>
+			android:text="Random"
+			android:id="@+id/btn"
+			android:layout_marginTop="60dp"
+			android:textSize="30sp"/>
 
 	</LinearLayout>
 
